@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#141f72</color>
+    <color name="colorPrimaryDark">#141f72</color>
     <color name="colorAccent">#FF4081</color>
+
+
+    <!--TRANSPARENT-->
+    <color name="transparent">#00ffffff</color>
+
+    <!--WHITE to GRAY etc-->
+    <color name="white">#ffffff</color>
+    <color name="clouds">#ecf0f1</color>
+    <color name="transparentWhite">#95f0f0f0</color>
+    <color name="minimalist_gray">#a8a7ab</color>
+    <color name="minimalist_gray1">#bbc3cc</color>
+
+
+    <!--WEB COLORS-->
+    <color name="webColorBG">#141f72</color>
+    <color name="minimalist_green">#2f9395</color>
+    <color name="minimalist_blue">#3557cd</color>
+    <color name="colorPrimarySykes">#039be5</color>
+
+
+    <!--BLACK-->
+    <color name="black">#000</color>
+    <color name="darkgray">#70000000</color>
+
+
+    <!--SCORECARD - CARDVIEW Color Backgrounds-->
+    <color name="card_material_pinkish">#F67280</color>
+    <color name="card_material_orange">#F16A43</color>
+    <color name="card_material_yellowish">#F7D969</color>
+    <color name="card_material_yellow">#F9D423</color>
+    <color name="card_material_greenish">#2F9395</color>
+    <color name="card_material_yellowish1">#FAF473</color>
+
 </resources>

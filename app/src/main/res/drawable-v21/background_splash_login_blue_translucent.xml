@@ -1,0 +1,13 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:drawable="@drawable/background_splash_login_blue_gradient" />
+
+
+    <item>
+        <bitmap android:src="@drawable/pic_wallpaper_hr"
+            android:gravity="center"
+            android:alpha="190"/>
+    </item>
+
+</layer-list>

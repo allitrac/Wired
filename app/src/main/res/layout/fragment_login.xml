@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".SplashLoginTabs.Login"
+    android:paddingLeft="10dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:gravity="center">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!--TODO: UserLogin Username or Email-->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilUserLoginUname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_transparent_whitebox_withradius">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etUserLoginUname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:inputType="text"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:paddingLeft="4dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:hint="@string/unameORemail"
+            android:drawableEnd="@drawable/icon_userx16"
+            android:drawableRight="@drawable/icon_userx16"
+            android:textColorHint="@color/clouds"
+            android:background="@color/transparent"
+            android:imeOptions="actionNext"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!--TODO: UserLogin Password-->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilUserLoginPword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_transparent_whitebox_withradius"
+        android:layout_below="@id/tilUserLoginUname"
+        android:layout_marginTop="10dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etUserLoginPword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:inputType="textPassword"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:paddingLeft="4dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:hint="@string/password"
+            android:drawableEnd="@drawable/icon_keyx16"
+            android:drawableRight="@drawable/icon_keyx16"
+            android:textColorHint="@color/clouds"
+            android:background="@color/transparent"
+            android:imeOptions="actionDone"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!--TODO: UserLogin Forgot Password and Remember Me-->
+    <RelativeLayout
+        android:id="@+id/relLayLoginForgotPword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tilUserLoginPword">
+
+        <CheckBox
+            android:id="@+id/cbUserLoginRememberMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rememberMe"
+            android:textColor="@color/minimalist_gray"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/tvUserLoginForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgotPword"
+            android:layout_gravity="end"
+            android:textSize="12sp"
+            android:textColor="@color/colorAccent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <!--TODO: UserLogin Login-->
+    <Button
+        android:id="@+id/btnUserLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/background_button_blue"
+        android:layout_below="@id/relLayLoginForgotPword"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SplashLoginActivity"
+    android:background="@drawable/background_splash_login_blue_translucent"
+    android:gravity="center"
+    android:animateLayoutChanges="true"
+    android:paddingTop="60dp"
+    android:paddingBottom="70dp"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/pic_logo_wired_colored"
+        android:padding="10dp"
+        android:elevation="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_round_white_dashed_for_small_size"/>
+
+    <RelativeLayout
+        android:id="@+id/relLayTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@id/ivLogo"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/loginSignUpTablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:minHeight="?attr/actionBarSize"
+            app:tabMaxWidth="0dp"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            android:background="@color/transparent"
+            app:tabTextColor="@color/white"
+            app:tabTextAppearance="@style/TabLayoutTextStyle"
+            app:tabSelectedTextColor="@color/colorAccent"
+            app:tabIndicatorColor="@color/transparent"
+            app:tabBackground="@drawable/background_tab_selector"
+            app:tabRippleColor="@color/webColorBG">
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginSignupViewPager"
+            android:layout_below="@id/loginSignUpTablayout"
+            android:paddingTop="10dp"
+            android:background="@drawable/background_whitewithbottomradius">
+
+        </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+
+</RelativeLayout>
