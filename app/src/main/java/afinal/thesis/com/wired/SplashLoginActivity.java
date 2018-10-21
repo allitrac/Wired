@@ -25,8 +25,10 @@ public class SplashLoginActivity extends AppCompatActivity
 
     Handler handler = new Handler();
     TabLayout tabLayout;
-    RelativeLayout relLayTabs;
+    RelativeLayout relLayTabs, HrAmLogin;
     ImageView ivLogo;
+
+    Button loginBtn;
 
 
     @Override
@@ -37,17 +39,36 @@ public class SplashLoginActivity extends AppCompatActivity
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash_login);
 
-        handler.postDelayed(runnableIvLogo, 1000);
-
-        relLayTabs = findViewById(R.id.relLayTabs);
-
-        ViewPager loginSignupViewPager = findViewById(R.id.loginSignupViewPager);
-        SplashLoginViewPagerAdapter splashLoginViewPagerAdapter = new SplashLoginViewPagerAdapter(getSupportFragmentManager());
-        loginSignupViewPager.setAdapter(splashLoginViewPagerAdapter);
-
         tabLayout = findViewById(R.id.loginSignUpTablayout);
-        tabLayout.setupWithViewPager(loginSignupViewPager);
 
+        HrAmLogin = findViewById(R.id.relLayHrAmLogin);
+
+        if (tabLayout!=null){
+
+            handler.postDelayed(userLoginLogo, 1000);
+
+            relLayTabs = findViewById(R.id.relLayTabs);
+
+            ViewPager loginSignupViewPager = findViewById(R.id.loginSignupViewPager);
+            SplashLoginViewPagerAdapter splashLoginViewPagerAdapter = new SplashLoginViewPagerAdapter(getSupportFragmentManager());
+            loginSignupViewPager.setAdapter(splashLoginViewPagerAdapter);
+
+            tabLayout.setupWithViewPager(loginSignupViewPager);
+
+        } else {
+
+            handler.postDelayed(hramLoginLogo, 1000);
+
+            loginBtn = findViewById(R.id.btnHrAmLogin);
+            loginBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent toMainDashboardActivity = new Intent(SplashLoginActivity.this, MainDashboard.class);
+                    startActivity(toMainDashboardActivity);
+                }
+            });
+
+        }
     }
 
     @Override
@@ -55,10 +76,17 @@ public class SplashLoginActivity extends AppCompatActivity
 
     }
 
-    Runnable runnableIvLogo = new Runnable() {
+    Runnable userLoginLogo = new Runnable() {
         @Override
         public void run() {
             relLayTabs.setVisibility(View.VISIBLE);
+        }
+    };
+
+    Runnable hramLoginLogo = new Runnable() {
+        @Override
+        public void run() {
+            HrAmLogin.setVisibility(View.VISIBLE);
         }
     };
 }
