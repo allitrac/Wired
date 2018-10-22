@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:padding="2dp">
+
+<!--TODO: TextViews for Category Title and Radio buttons corresponding point values (1 to 5) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:paddingStart="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="0dp"
+                android:paddingEnd="0dp">
+
+                <TextView
+                    android:id="@+id/tvCategoryTitle"
+                    android:layout_weight=".7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/categoryTitle"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="normal|bold"/>
+
+                <LinearLayout
+                    android:layout_weight=".3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/five"
+                        android:paddingStart="13dp"
+                        android:paddingEnd="13dp"
+                        android:gravity="center"
+                        android:textStyle="normal|bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/four"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:gravity="center"
+                        android:textStyle="normal|bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/three"
+                        android:paddingStart="13dp"
+                        android:paddingEnd="13dp"
+                        android:gravity="center"
+                        android:textStyle="normal|bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/two"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:gravity="center"
+                        android:textStyle="normal|bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/one"
+                        android:paddingStart="13dp"
+                        android:paddingEnd="13dp"
+                        android:gravity="center"
+                        android:textStyle="normal|bold"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+<!--TODO: Category Items: -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="0dp"
+                android:paddingEnd="0dp"
+                android:gravity="center">
+
+<!--TODO: Item1-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvItem1Title"
+                        android:layout_weight=".7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/item1Title"
+                        android:layout_gravity="center_vertical"/>
+
+<!--TODO: RadioGroup for Item1-->
+                    <RadioGroup
+                        android:id="@+id/rgItem1"
+                        android:layout_weight=".3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:id="@+id/rbtnItem15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:id="@+id/rbtnItem14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:id="@+id/rbtnItem13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:id="@+id/rbtnItem12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:id="@+id/rbtnItem11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+<!--TODO: Item2-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvItem2Title"
+                        android:layout_weight=".7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/item2Title"
+                        android:layout_gravity="center_vertical"/>
+
+<!--TODO: Radio Group for Item2-->
+                    <RadioGroup
+                        android:layout_weight=".3"
+                        android:id="@+id/rgItem2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:id="@+id/rbtnItem25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:id="@+id/rbtnItem24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:id="@+id/rbtnItem23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:id="@+id/rbtnItem22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:id="@+id/rbtnItem21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RadioGroup>
+                </LinearLayout>
+
+<!--TODO: Item3-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvItem3Title"
+                        android:layout_weight=".7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/item3Title"
+                        android:layout_gravity="center_vertical"/>
+
+<!--TODO: Radio group for Item 3-->
+                    <RadioGroup
+                        android:layout_weight=".3"
+                        android:id="@+id/rgItem3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:id="@+id/rbtnItem35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:id="@+id/rbtnItem34"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:id="@+id/rbtnItem33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:id="@+id/rbtnItem32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:id="@+id/rbtnItem31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RadioGroup>
+                </LinearLayout>
+
+<!--TODO: Item4-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvItem4Title"
+                        android:layout_weight=".7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/item4Title"
+                        android:layout_gravity="center_vertical"/>
+
+<!--TODO: Radio Group for Item4-->
+                    <RadioGroup
+                        android:layout_weight=".3"
+                        android:id="@+id/rgItem4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:id="@+id/rbtnItem45"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:id="@+id/rbtnItem44"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:id="@+id/rbtnItem43"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:id="@+id/rbtnItem42"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioButton
+                            android:id="@+id/rbtnItem41"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RadioGroup>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</android.support.v7.widget.CardView>

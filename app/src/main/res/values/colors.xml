@@ -11,6 +11,7 @@
     <!--WHITE to GRAY etc-->
     <color name="white">#ffffff</color>
     <color name="clouds">#ecf0f1</color>
+    <color name="cloudsy">#fafafa</color>
     <color name="transparentWhite">#95f0f0f0</color>
     <color name="minimalist_gray">#a8a7ab</color>
     <color name="minimalist_gray1">#bbc3cc</color>

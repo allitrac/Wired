@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HR.ApplicantForHrInterviewFragment"
+    android:background="@color/cloudsy"
+    android:weightSum="1"
+    android:paddingTop="2dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".49">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civApplicantProPic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/pic_applicant_profile"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:elevation="3dp"/>
+
+<!--TODO: Applicant's Basic Info-->
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_marginTop="80dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp">
+
+<!--TODO: Applicant Name-->
+                        <LinearLayout
+                            android:id="@+id/linLayApplicantName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_centerHorizontal="true">
+
+                            <TextView
+                                android:id="@+id/tvApplicantFNamevalue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Juan"
+                                android:textSize="20sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/tvApplicantLNamevalue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="dela Cruz"
+                                android:textSize="20sp"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+<!--TODO: Positon Applied-->
+                        <TextView
+                            android:id="@+id/tvApplicantPosAppliedvalue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="Web Designer/Developer"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/linLayApplicantName"/>
+<!--TODO: ID-->
+                        <TextView
+                            android:id="@+id/tvIDtitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ID: "
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_below="@id/tvApplicantPosAppliedvalue"/>
+
+                        <TextView
+                            android:id="@+id/tvIDvalue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:text="ID Value"
+                            android:textSize="16sp"
+                            android:layout_below="@id/tvApplicantPosAppliedvalue"
+                            android:layout_toRightOf="@id/tvIDtitle"/>
+
+<!--TODO: Previous Applicant-->
+                        <TextView
+                            android:id="@+id/tvPrevApplicanttitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Previous Applicant: "
+                            android:textSize="16sp"
+                            android:layout_below="@id/tvApplicantPosAppliedvalue"
+                            android:layout_toRightOf="@id/tvIDvalue"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tvPrevApplicantValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:text="Yes"
+                            android:textSize="16sp"
+                            android:layout_below="@id/tvApplicantPosAppliedvalue"
+                            android:layout_toRightOf="@id/tvPrevApplicanttitle"/>
+
+<!--TODO: Previous Employee-->
+                        <TextView
+                            android:id="@+id/tvPrevEmployeetitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Previous Applicant: "
+                            android:textSize="16sp"
+                            android:layout_below="@id/tvApplicantPosAppliedvalue"
+                            android:layout_toRightOf="@id/tvPrevApplicantValue"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tvPrevEmployeeValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:text="Yes"
+                            android:textSize="16sp"
+                            android:layout_below="@id/tvApplicantPosAppliedvalue"
+                            android:layout_toRightOf="@id/tvPrevEmployeetitle"/>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".01"
+        android:background="@color/cloudsy"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".49"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_gravity="right">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/scorecard"
+            android:textAllCaps="true"
+            android:layout_margin="5dp"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvScorecardCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:elevation="0dp"/>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hrCommentTitle"
+                            android:textStyle="normal|bold"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:paddingStart="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="0dp"
+                            android:paddingEnd="0dp"
+                            android:gravity="center_vertical"/>
+
+                        <EditText
+                            android:id="@+id/etHRComment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hrCommentTitle"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:paddingStart="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="0dp"
+                            android:paddingEnd="0dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:cursorVisible="false"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/background_button_blue"
+                    android:layout_marginBottom="2dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

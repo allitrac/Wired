@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <string name="app_name">Wired</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -8,7 +8,7 @@
     <string name="action_settings">Settings</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment" tools:keep="@string/hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!--Taglines-->
     <string name="unameORemail">Username or e-mail</string>
@@ -20,4 +20,58 @@
     <string name="uname">Username</string>
     <string name="email">Email</string>
     <string name="confirmPword">Confirm Password</string>
+
+
+    <!--TODO: SCORECARD Values-->
+
+
+    <!--RADIO BUTTON Values-->
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="three">3</string>
+    <string name="two">2</string>
+    <string name="one">1</string>
+
+    <!--PSI - 20%-->
+    <string name="psi">Pronunciation, Stress and Intonations</string>
+    <string name="psi1">Globally acceptable pronunciation and neutralized accent</string>
+    <string name="psi2">Syllable and word stress</string>
+    <string name="psi3">Clarity, Volume, Pitch</string>
+    <string name="psi4">Speed and Intonation</string>
+
+    <!--LAVR - 20%-->
+    <string name="lavr">Language Accuracy and Vocabulary Range</string>
+    <string name="lavr1">Vocabulary range</string>
+    <string name="lavr2">Word usage and order</string>
+    <string name="lavr3">Clarity, Volume, Pitch</string>
+    <string name="lavr4">Speed and Intonation</string>
+
+    <!--DSC - 30%-->
+    <string name="dsc">Discourse and Strategic Competency</string>
+    <string name="dsc1">Listening comprehension</string>
+    <string name="dsc2">Clear and logical progression of ideas</string>
+    <string name="dsc3">Use of transitions</string>
+    <string name="dsc4">Controls interactions</string>
+
+    <!--IFSC - 30%-->
+    <string name="ifsc">Interactive Fluency and Sociolinguistic Competency</string>
+    <string name="ifsc1">Over-all tone: confidence and professionalism</string>
+    <string name="ifsc2">Ability to respond to different cultural cues</string>
+    <string name="ifsc3">Understands idioms</string>
+    <string name="ifsc4">Builds rapport</string>
+
+    <!--TODO-> HR USED STRINGS-->
+    <string name="hrCommentTitle">Comment or Feedback</string>
+    <string name="hrHintComment">It would be an honor to hear a feedback from you. Thank you.</string>
+    <string name="thankYou">Thank You!</string>
+    <string name="password_title">Password</string>
+    <string name="scorecard">Scorecard</string>
+    <string name="categoryTitle">Category Title</string>
+    <string name="item1Title">Item1 Title</string>
+    <string name="item2Title">Item2 Title</string>
+    <string name="item3Title">Item3 Title</string>
+    <string name="item4Title">Item4 Title</string>
+    <string name="submit">Submit</string>
+    <string name="applicantInfo">Applicant Information</string>
+
 </resources>
